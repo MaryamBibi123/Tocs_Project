@@ -25,8 +25,8 @@
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="search-input"/>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="button" id="search-btn">
           Search
         </button>
       </form>
@@ -67,7 +67,11 @@
         </div>
       </div>
 
-      <button type="submit" class="btn btn-outline-primary submit-btn">Add Book</button>
+      <div class="button-container d-flex justify-content-between">
+        <button type="submit" class="btn btn-outline-primary submit-btn">Add Book</button>
+        <button type="button" class="btn btn-outline-secondary clear-btn">Clear Fields</button>
+      </div>
+
     </form>
     <table class="table table-bordered my-3">
       <thead class="thead-light">
